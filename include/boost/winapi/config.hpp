@@ -232,8 +232,8 @@
 #define BOOST_WINAPI_IMPORT
 #define BOOST_WINAPI_IMPORT_EXCEPT_WM
 #else
-#define BOOST_WINAPI_IMPORT BOOST_SYMBOL_IMPORT
-#define BOOST_WINAPI_IMPORT_EXCEPT_WM BOOST_SYMBOL_IMPORT
+#define BOOST_WINAPI_IMPORT __declspec(dllimport)
+#define BOOST_WINAPI_IMPORT_EXCEPT_WM __declspec(dllimport)
 #endif
 
 #include <boost/config.hpp>
